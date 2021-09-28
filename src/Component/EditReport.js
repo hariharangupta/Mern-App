@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { getReport, editReport, getReportById } from './Apis';
+import {  editReport, getReportById } from './Apis';
 import { useParams, useHistory } from 'react-router-dom';
 
 const EditReport = () => {
@@ -23,7 +23,7 @@ let editArr = {
     console.log("data",response.data);
 }
 const editReportDetails = async() => {
-  const response = await editReport(0, editArr);
+  const response = await editReport(id, editArr);
   console.log("edit", response);
   history.push('/allreports');
 }

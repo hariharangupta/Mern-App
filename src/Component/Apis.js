@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const reportUrl = 'http://localhost:5000';
+const reportUrl = 'http://localhost:4000';
 
 
 
@@ -18,12 +18,12 @@ export const addReport = async (report) => {
 // // //  get report by id
 export const getReportById = async (id) => {
     id = id || '';
-    return await axios.get(`${reportUrl}/edit/${0}`);
+    return await axios.get(`${reportUrl}/edit/${id}`);
 }
 
 // edit report
 export const editReport = async (id, report) => {
-    return await axios.put(`${reportUrl}/edit/${0}`, report)
+    return await axios.put(`${reportUrl}/edit/${id}`, report)
 }
 
 // delete report

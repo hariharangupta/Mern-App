@@ -5,7 +5,7 @@ function Card({ name }) {
   const [inputFeild, setInputFeild] = useState({ week: "" });
   const [arrayList, setArrayList] = useState([]);
   const [showInputFeild, setShowInputFeild] = useState(false);
-
+console.log(setArrayList)
   const cardRef = useRef();
 
   const handleReset = () => {

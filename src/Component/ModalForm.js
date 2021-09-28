@@ -7,6 +7,7 @@ const ModalForm = () => {
   const [condition, setCondition] = useState(false);
   const [users, setUsers] = useState([]);
 
+  console.log(setUsers)
 
   let renderCard = users.map((value, index) => (
     <div className="d-flex"  key = {index}>

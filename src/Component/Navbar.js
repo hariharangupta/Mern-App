@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, Switch, Route} from "react-router-dom"
 import AllReport from './AllReport'
-import Card from './Card'
+// import Card from './Card'
 import EditReport from './EditReport'
 import ModalForm from './ModalForm'
 
